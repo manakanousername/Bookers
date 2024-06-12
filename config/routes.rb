@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   get 'homes/top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "/top" => "homes#top"
-  get "/book" => "books#index"
+  get "/books" => "books#index"
   get "/show" =>"books#show"
   get "/show/edit" =>"books#edit"
-
+  post "book" => "books#create"
+  resources :books, only: [:index, :create]
 end
