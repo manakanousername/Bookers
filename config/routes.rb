@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "/top" => "homes#top"
   get "/books" => "books#index"
   post "books" => "books#create"
-  resources :books, only: [:index, :create, :update]
+  resources :all_books, only: [:index, :create, :update]
   patch "books/:id" => "books#update",as: "update_book"
   get "books/:id" =>"books#show",as: "book"
   get "books/:id/edit" =>"books#edit",as: "edit_book"
