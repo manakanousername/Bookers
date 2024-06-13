@@ -8,6 +8,8 @@
     <tr>
     <td><p><%= book.title %></p></td>
     <td><p><%= book.body %></p></td>
+    <td><%= link_to "Show", book_path(book.id) %></td>
+    <td><%= link_to "Edit", edit_book_path(@book.id), method: :patch do |f| %></td>
     </tr>
   <% end %>
 </table>
