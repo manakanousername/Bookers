@@ -1,3 +1,62 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+td {
+  color: #000;
+}
+td, th {
+  padding: 5px;
+}
+
+tr {
+  padding-bottom: 5px;
+  display: table-row;
+
+}
+h1 {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+thred {
+  margin-bottom: 2px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+.button {
+  padding: 5px 10px; /* ボタンの余白を調整 */
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0px;
+}
+
+span {
+  margin-left: 0 10px; /* パイプラインの余白を調整 */
+}
+#title, #body {
+  margin-bottom: 10px; /* 各idの下に余白を追加 */
+}
+
+.action-link {
+  padding: 0px; /* 各アクションリンクの余白を追加 */
+  margin: 0 5px; /* 各アクションリンクの間隔を追加 */
+}
+
+table {
+  border-collapse: collapse; /* テーブルのセル間の余白を削除 */
+}

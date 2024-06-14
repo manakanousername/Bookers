@@ -1,4 +1,7 @@
 <p>Title: <%= @book.title %></p>
 <p>Body: <%= @book.body %></p>
-<%= link_to "Edit",edit_book_path(@book.id) %>
-<p><a href="/books">Back</a></p>
+<div class="button-group">
+  <%= link_to "Edit",edit_book_path(@book.id), class: "button" %>
+  <span>|</span>
+  <%= link_to "Back", books_path, class: "button" %>
+</div>
